@@ -17,8 +17,10 @@
     <!-- endbuild -->
   </head>
 
-  <body ng-app="Boom">
-    <ion-nav-view></ion-nav-view>
+  <body ng-app="boom">
+
+    <div ui-view="header"></div>
+    <div ui-view="plp"></div>
 
     <!-- build:js scripts/vendor.js -->
     <!-- <script src="vendor/someContribJs.js"></script> -->
@@ -36,11 +38,12 @@
     <!-- cordova script (this will be a 404 during development) -->
     <script src="cordova.js"></script>
 
-
-        <!-- build:js scripts/scripts.js -->
-        <script src="scripts/config.js"></script>
-        <script src="scripts/app.js"></script>
-        <script src="scripts/controllers.js"></script>
-        <!-- endbuild -->
+    <!-- build:js scripts/scripts.js -->
+    <script src="scripts/config.js"></script>
+    <script src="scripts/app.js"></script>
+    <script src="scripts/plp/plpCtrl.js"></script>
+    <script src="scripts/core/repositories/dishRepoFactory.js"></script>
+    <script src="scripts/core/repositories/categoryRepoFactory.js"></script>
+    <!-- endbuild -->
 </body>
 </html>
