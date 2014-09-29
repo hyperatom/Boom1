@@ -1,7 +1,7 @@
 angular.module('boom.plp')
 
-    .controller('plpCtrl', ['$scope', '$http', 'dishRepository', 'categoryRepository',
-        function ($scope, $http, dishRepository, categoryRepository) {
+    .controller('plpCtrl', ['$scope', 'categoryRepository',
+        function ($scope, categoryRepository) {
 
         $scope.categories = [];
 
