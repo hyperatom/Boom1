@@ -1,6 +1,6 @@
 angular.module('boom.repositories')
 
-    .factory('categoryRepository', ['$http', 'dishRepository', function($http, dishRepo) {
+    .factory('categoryRepository', ['$http', 'dishRepository', '$firebase', function($http, dishRepo, $firebase) {
 
         function getAllCategories() {
             return $http.get('test_data/categories.json').then(joinDishesToCategories);
