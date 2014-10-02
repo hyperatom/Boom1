@@ -14,12 +14,12 @@ angular.module('boom.plp')
         $scope.myData = sync.$asArray();
 
         // Adding and saving records to firebase
-        //$scope.myData.$add({ name: "Oh hello", phone: "999999" });
-
+        $scope.myData.$add({ name: "testin", phone: "999999" });
+//
         // Remove the first record from firebase and save
         //$scope.myData.$remove($scope.myData[0]);
 
-        // Save the state of the array to the firebase resource (dataRef)
+        // Save the state of the array to the firebase endpoint (dataRef)
         //$scope.myData.$save({ name: "Oh hello", phone: "999999" });
 
         (function() {
