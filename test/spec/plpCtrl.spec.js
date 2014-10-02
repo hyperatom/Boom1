@@ -55,7 +55,6 @@ describe('Controller: plpCtrl', function () {
 
     it('should populate the categories array with data.', function() {
         // Fires then() callbacks since we are outside angular environment
-        //browser().navigateTo('/');
         scope.$root.$digest();
         scope.categories.should.equal(dummyCategories.data);
     });
